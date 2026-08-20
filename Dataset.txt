@@ -1,0 +1,71 @@
+📚 Dataset
+
+This project uses the Flickr8k Image Captioning Dataset, which contains images paired with multiple human-written captions.
+
+The dataset was obtained from Kaggle and is not included in this GitHub repository because the dataset is large and should be downloaded separately.
+
+📦 Dataset Contents
+
+The dataset contains:
+
+- 🖼️ 8,000 images
+- 📝 Multiple captions for each image
+- 📄 Caption annotations used for training the image captioning model
+
+The project uses the images as the visual input and the corresponding captions as the text output for training the VGG16 + LSTM model.
+
+⬇️ Download the Dataset
+
+You can download the dataset from Kaggle:
+
+Flickr8k Image Captioning Dataset
+
+https://www.kaggle.com/datasets/adityajn105/flickr8k
+
+After downloading the dataset, extract the files locally.
+
+📁 Dataset Structure
+
+After extraction, organize the dataset approximately as follows:
+
+dataset/
+│
+├── Images/
+│   ├── 1000268201_693b08cb0e.jpg
+│   ├── 1001773457_577c3a7d70.jpg
+│   ├── ...
+│
+└── captions.txt
+
+The exact filenames and folder structure may vary depending on the Kaggle version you download.
+
+🔗 Using the Dataset with This Project
+
+After downloading the dataset:
+
+1. Download and extract the Flickr8k dataset.
+2. Place the image folder in the project directory.
+3. Place the caption file in the expected dataset location.
+4. Update the dataset paths in "vgg16-LSTM.ipynb" if necessary.
+5. Run the notebook cells sequentially.
+
+Example:
+
+Image-Captioning/
+│
+├── vgg16-LSTM.ipynb
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+└── dataset/
+    ├── Images/
+    └── captions.txt
+
+⚠️ Dataset Note
+
+The dataset is not included in this repository.
+
+Users should download the dataset directly from Kaggle and follow the instructions above before running the notebook.
+
+The GitHub repository contains the project code and notebook, while the dataset remains a separate download.
